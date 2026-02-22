@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Habib Shaikh | Premium Web Designer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#000;
+  color:#fff;
+}
+
+/* ===== SLIDER ===== */
+.slider{
+  height:100vh;
+  position:relative;
+  overflow:hidden;
+}
+
+.slide{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:cover;
+  background-position:center;
+  opacity:0;
+  transition:opacity 1.5s ease;
+}
+
+.slide.active{
+  opacity:1;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,rgba(0,0,0,0.85),rgba(0,0,0,0.4));
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero-content h1{
+  font-size:3.4rem;
+}
+
+.hero-content span{
+  color:#ffd700;
+  text-shadow:0 0 15px #ffd700;
+}
+
+.hero-content p{
+  margin:20px auto;
+  max-width:650px;
+  font-size:1.2rem;
+  opacity:0.9;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 38px;
+  background:linear-gradient(45deg,#ffd700,#ffb700);
+  color:#000;
+  text-decoration:none;
+  border-radius:40px;
+  font-weight:600;
+  transition:0.4s;
+}
+
+.btn:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 25px #ffd700;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:90px 20px;
+}
+
+h2{
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:60px;
+  color:#ffd700;
+}
+
+/* ===== CARDS ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:20px;
+  border:1px solid rgba(255,215,0,0.15);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-15px);
+  box-shadow:0 0 30px rgba(255,215,0,0.25);
+}
+
+/* ===== CONTACT ===== */
+.contact{
+  text-align:center;
+  font-size:1.1rem;
+}
+
+.contact a{
+  color:#ffd700;
+  text-decoration:none;
+  font-weight:600;
+}
+
+footer{
+  background:#000;
+  text-align:center;
+  padding:25px;
+  font-size:0.9rem;
+  border-top:1px solid rgba(255,215,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HERO SLIDER ===== -->
+<div class="slider">
+  <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80')"></div>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <div>
+      <h1>Hi, I’m <span>Habib Shaikh</span></h1>
+      <p>I design premium, high-converting websites that help brands stand out and grow online.</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section>
+  <h2>My Service</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Website Design</h3>
+      <p>Dark premium, modern and visually powerful websites built to impress high-value clients.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section>
+  <h2>Skills & Tools</h2>
+  <div class="grid">
+    <div class="card">
+      Canva • Creative UI • Premium Layouts • Branding • Client-Focused Design
+    </div>
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO ===== -->
+<section>
+  <h2>Sample Work</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Business Website (Demo)</h3>
+      <p>Luxury style business website with dark premium theme.</p>
+    </div>
+    <div class="card">
+      <h3>Personal Brand (Demo)</h3>
+      <p>High-end personal branding website.</p>
+    </div>
+    <div class="card">
+      <h3>Landing Page (Demo)</h3>
+      <p>Conversion-focused landing page with animations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact">
+    <p>Email: <a href="mailto:habibshaikh25001@gmail.com">habibshaikh25001@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/_habib_2500" target="_blank">@_habib_2500</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Habib Shaikh | Premium Web Designer
+</footer>
+
+<!-- ===== SLIDER SCRIPT ===== -->
+<script>
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
+}, 4000);
+</script>
+
+</body>
+</html>
